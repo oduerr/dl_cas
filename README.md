@@ -1,3 +1,3 @@
-# Tutorials for deep learning.
+# Tutorials for CAS data science application day 5 of ML
 
-In this place I like to collect tutorials for deep learning. Currently I have done a tutorial for the great lasagne framework. See [lasagne](lasagne)
+
