@@ -5,12 +5,15 @@ library(alr3)
 attach(challeng)
 Failure = ifelse(Fail > 0, 1, 0) # We only consider failures
 challenger = data.frame(Temp, Failure)
+write.csv(challenger, file = 'challenger.txt', row.names = FALSE)
+
 qplot(Temp, Fail)
 qplot(Temp, Failure)
 
 erg<-glm(Failure~Temp,family=binomial(logit), data = challenger)
 a<-erg$coefficients[1]
 b<-erg$coefficients[2]
+
 
 x<-seq(30,100,0.1)
 
